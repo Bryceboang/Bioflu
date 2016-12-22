@@ -14,7 +14,7 @@ class JConfig {
 	public $dbtype = 'mysqli';
 	public $host = '119.81.221.64';
 	public $user = 'biofludb_user';
-	public $password = '`+E082ChKKzqy';
+	public $password = '+E082ChKKzqy';
 	public $db = 'biofludb_prod';
 	public $dbprefix = 'bio_';
 	public $live_site = '';
