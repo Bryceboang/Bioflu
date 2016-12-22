@@ -1,0 +1,14 @@
+.parent-container{
+	display: table;
+	
+}
+.child-containers{
+  	float: none;
+    display: table-cell;
+    vertical-align: top;
+
+}
+
+#map-canvas{
+	height:680px!important;
+}

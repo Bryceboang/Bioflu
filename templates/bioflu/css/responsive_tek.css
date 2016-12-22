@@ -1,0 +1,798 @@
+@media screen and (max-width:900px){
+
+	.violator img{
+
+		height: 100px;
+
+	}	
+
+	.flexslider{
+
+		margin: 0px !important;
+
+	}
+
+	.flexslider ul li img{
+
+	    max-width: 100%;
+
+	    max-height: 100%;
+
+	    object-fit: cover;
+
+	    object-position: left;
+
+	    height: 450px;
+
+	}
+
+	.home-container{
+
+		width: 100%;
+
+	}
+
+	.home-icon-pag2flu div{
+
+		padding: 5px !important;
+
+	}
+
+	.main-wrapper{
+
+		margin-top: 15px;
+
+	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px){
+
+	.main-wrapper{
+
+		min-height: 785px !important;
+
+	}
+
+	.main-container{
+
+		width: 100% !important;
+
+		min-height: 850px;
+
+	}
+
+	.flumonitor_count{
+
+		margin-right: 15% !important;
+
+	}
+
+	.mainMenu ul li a {
+
+	    padding: 10px 7px !important;
+
+	    font-size: 12px;
+
+	}
+
+	.searchbar {
+
+	    width: 150px;
+
+	}
+
+	.widget{
+
+		right: 0px;
+
+	}
+
+	.flu-campaign{
+
+		margin-bottom: 10%;
+
+	}
+
+	.girl-img {
+
+	    display: block !important;
+
+	    width: 50% !important;
+
+	    margin-top: -50%;
+
+	    position: relative !important;
+
+	}
+
+	.search-container{
+
+		min-height: 1000px;
+
+	}
+
+	.contact-container{
+
+		padding: 5% 5% 8% !important;
+
+	}
+
+	.footer-container{
+
+		width: 100%;
+
+	}
+
+}
+
+@media screen and (max-width: 768px){
+
+
+
+	.pag2flu-vid-desc{
+
+		text-align: center !important;
+
+	}
+
+	.carousel-inner{
+
+		margin-bottom: 10px;
+
+	}
+
+	#flu-news{
+
+		box-shadow: none !important;
+
+	}
+
+	.flu-news-intro{
+
+		padding: 0px 10px !important;
+
+		margin-top: -15px;
+
+	}
+
+	.main-container{
+
+		/* overflow-x:hidden; */
+
+	}
+
+	.mainMenu{
+
+		padding:2%;
+
+	}
+
+	.navbar-header{
+
+		margin-top: 0px !important;
+
+	}
+
+	.comment-container{
+
+		width: 100%;
+
+	}
+
+	.related-articles{
+
+		width: 90%;
+
+	}
+
+	.related-title{
+
+		font-size: 10pt;
+
+	}
+
+	.related-title{
+
+		font-size: 9pt;
+
+	}
+
+	.article-title{
+
+		font-size: 30pt;
+
+	}
+
+	.r-border{
+
+		height: 420px;
+
+		margin-bottom: 100px;
+
+	}
+
+	.footer-line{
+
+		width: 150px;
+
+	}
+
+	
+
+	.flumonitor_count{
+
+		margin-right: 0px;
+
+	}
+
+	.girl-img{
+
+		display: none;
+
+	}
+
+	.contact-container{
+
+		background-size: cover;
+
+	}
+
+	.help-text{
+
+		width: 100%;
+
+	}
+
+	.love-to-help{
+
+		font-size: 28pt;
+
+	}
+
+	.contact-label h3{
+
+		font-size: 37pt;
+
+	}
+
+	.contact-fb .soc-icon,.contact-fb .fbtext{
+
+		width: 100%;
+
+	}
+
+	.product-container div p{
+
+		text-align: center;
+
+	}
+
+	.product-container{
+
+		width: 100%;
+
+	}
+
+	.prod-title{
+
+		font-size: 30pt;
+
+	    margin-top: 10px;
+
+	    line-height: 1;
+
+	}
+
+	.prod-reminder-title{
+
+		text-align: center;
+
+	}
+
+	.prod-reminder p{
+
+		width: 100%;
+
+	}
+
+	.warning-text{
+
+		width: 100%;
+
+	}
+
+	.flu-news-article{
+
+		padding-left: 0px !important;
+
+		padding-right: 0px !important;
+
+	}
+
+	.carousel-inner {
+
+	    overflow-x: auto !important;
+
+	    width: 100% !important;
+
+	}
+
+/*	.carousel-inner {
+
+	    position: relative;
+
+	    overflow: hidden;
+
+	    width: 200% !important;
+
+	}*/
+
+	.flu-news-img-src {
+
+	    min-height: 170px !important; 
+
+	    max-height: 150px !important;
+
+	    height: 100% !important;
+
+	    object-fit: cover;
+
+	}
+
+	.chevron{
+
+		display: none !important;
+
+	}
+
+	.flu-news-img {
+
+	    width: 16.66% !important;
+
+	    padding: 0;
+
+	    float: left;
+
+	}
+
+	.around-nation{
+
+		padding:10px !important;
+
+	}
+
+	.curated-articles-title{
+
+		font-size: 18pt !important;
+
+	}
+
+	.publish-date{
+
+		display: none;
+
+	}
+
+	.arrow,.arrow1{
+
+		display: none !important;
+
+	}
+
+	.img-slider-div,.slider-curated-body{
+
+		margin-top: 0px !important;
+
+	}
+
+	.art-archives-img {
+
+	    width: 100% !important;
+
+	}
+
+	.mainMenu .navbar-header{
+
+		width: 100%;
+
+	}
+
+}
+
+/*@media screen and (min-width: 767px){
+
+	.mainMenu ul li a{
+
+		padding: 10px 13px !important;
+
+	}
+
+}*/
+
+@media screen and (max-width: 767px){
+
+	.mainMenu li:nth-child(7) {
+
+	    margin-left: 0px !important;
+
+	    padding: 0px 15px 15px;
+
+	}
+
+	.searchbar{
+
+		width: 100% !important;
+
+	}
+
+	.mainMenu .navbar-header{
+
+		width: 90%;
+
+	}
+
+	.mainMenu ul li{
+
+		width: 100%;
+
+	}
+
+	.mainMenu{
+
+		padding: 0px;
+
+	}
+
+	.border{
+
+		border-top: 1px solid #42cbf4;
+
+		padding-top: 5% !important;
+
+	}
+
+	.r-border{
+
+		height: 450px;
+
+		margin-bottom: 60px;
+
+	}
+
+	
+
+}
+
+
+
+@media screen and (min-width: 640px) and (max-width: 767px){
+
+	.r-border{
+
+		margin-bottom: 100px;
+
+	}
+
+	.footer-line{
+
+		display: none;
+
+	}
+
+	.footer-container{
+
+		width: 100%;
+
+	}
+
+	.fred{
+
+		font-size: 12px;
+
+	}
+
+	.sub-text{
+
+		font-size: 9px;
+
+	}
+
+	.flumonitor_count li{
+
+		width: 80px !important;
+
+	}
+
+	.flumonitor_count{
+
+		margin-right: 9px;
+
+    	margin-top: 17px !important;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 640px){
+
+
+
+	.widget .sml-txt{
+
+		font-size: 8pt;
+
+	}
+
+	.violator{
+
+		margin-top: -7px;
+
+	}
+
+	.r-border{
+
+		height: auto;
+
+	}
+
+	.main-container{
+
+	/*	margin-bottom: 45px;*/
+
+	}
+
+	.footer-container{
+
+		width: 100%;
+
+	}
+
+	.footer-line{
+
+		display: none;
+
+	}
+
+	.flumonitor_count ul li{
+
+		float: left;
+
+		list-style: none;
+
+		padding-left: 10px;
+
+		width: auto;
+
+	}
+
+	.flumonitor_count ul{
+
+		display: inline-flex;
+
+    	padding: 0px;
+
+	}
+
+	.flumonitor_count{
+
+		width: 72%;
+
+		margin: 0px auto;
+
+		float: none;
+
+	}
+
+	.widget img.bg{
+
+		width: 100%;
+
+	    /* max-width: 100%; */
+
+	    /* max-height: 100%; */
+
+	    /* object-fit: cover; */
+
+	    object-position: center;
+
+	    height: 120px;
+
+	}
+
+	.navbar-header{
+
+		width: 100%;
+
+	}
+
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+
+	.flumonitor_count{
+
+		width: auto !important;
+
+		margin-top: 5px;
+
+	}
+
+}
+
+
+
+
+
+@media screen and (max-width: 639px){
+
+	.curated-articles .article-item{
+
+		max-height: 140px !important;
+
+	}
+
+	.love-to-help{
+
+		line-height: 1;
+
+    	margin-top: 15px;
+
+	}
+
+	.border-top{
+
+		line-height: 1;
+
+	}
+
+	.widget{
+
+		position: relative !important;
+
+		right: 0px;
+
+	}
+
+	.r-border{
+
+		margin-bottom: 15px;
+
+	}
+
+	.related-thumb{
+
+		object-position:left;
+
+	}
+
+	.related-con-right{
+
+		height: auto;
+
+    	margin-bottom: 15px;
+
+    	width: 100% !important;
+
+	}
+
+	.related-intro{
+
+		font-size: 12pt;
+
+	}
+
+	.related-articles{
+
+		width: 85% !important;
+
+	}
+
+	.related-title{
+
+		font-size: 15pt;
+
+	}
+
+	.logo-text{
+
+		margin-top: 10px;
+
+    	margin-left: -15px;
+
+	}
+
+	.logo-title {
+
+	    font-size: 30px;
+
+	}
+
+	.logo-sub {
+
+	    margin-top: -10px;
+
+	    font-size: 12px;
+
+	}
+
+	.footer-container li img{
+
+		height: 23px !important;
+
+		margin:0px;
+
+	}
+
+	.footer-line{
+
+		display: none;
+
+	}
+
+	.footer-text{
+
+		font-size: 8px !important;
+
+		margin-top: 15px !important;
+
+	}
+
+	.footer-container li{
+
+		padding: 5px 3px;
+
+	}
+
+
+
+}
+
+
+
+@media screen and (min-width: 500px) and (max-width: 768px){
+
+	.p2{
+
+		font-size: 12pt !important;
+
+	}
+
+	.p3{
+
+		font-size: 10pt !important;
+
+	}
+
+	.art-archives-img{
+
+		max-height: 120px !important;
+
+		min-height: 120px !important;
+
+	}
+
+}
+
+@media screen and (min-width:480px) and (max-width: 768px){
+
+	.p2_slider {
+
+	    font-size: 12pt !important;
+
+	}
+
+	.p3_slider {
+
+	    font-size: 10pt !important;
+
+	}
+
+}
+
+
+

@@ -1,0 +1,21 @@
+.save {
+  display: none;
+}
+.pagination{
+  display: none;
+}
+.img_add{
+  display: inline !important;
+}
+.inactive{
+  display: none !important;
+}
+.er-msg-desc, .er-msg-foot{
+  display: none;
+  color: red;
+  font-size: 11px;
+}
+
+.image2 {
+    width: 100%;
+}
