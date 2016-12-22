@@ -12,7 +12,7 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = '119.81.221.64';
+	public $host = '161.202.29.32';
 	public $user = 'biofludb_user';
 	public $password = '+E082ChKKzqy';
 	public $db = 'biofludb_prod';
