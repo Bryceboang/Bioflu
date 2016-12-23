@@ -1,6 +1,0 @@
-{
-  "require": {
-    "ext-mysqli": "*",
-    "ext-mysql": "*"
-  }
-}
