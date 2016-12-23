@@ -1,4 +1,7 @@
 <?php
+
+echo "Pasooook";
+die();
 /**
  * @package    Joomla.Installation
  *
@@ -31,7 +34,7 @@ class JConfig
 	public $access = '1';
 
 	/* Database Settings */
-	public $dbtype = 'mysqli';               // Normally mysqli
+	public $dbtype = 'mysql';               // Normally mysqli
 	public $host = 'localhost';              // This is normally set to localhost
 	public $user = '';                       // DB username
 	public $password = '';                   // DB password
