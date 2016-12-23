@@ -1,4 +1,7 @@
 <?php
+
+echo "aa";
+die();
 /**
  * @package    Joomla.Site
  *
