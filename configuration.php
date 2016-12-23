@@ -32,10 +32,10 @@ class JConfig
 
 	/* Database Settings */
 	public $dbtype = 'mysql';               // Normally mysqli
-	public $host = 'localhost';              // This is normally set to localhost
-	public $user = '';                       // DB username
-	public $password = '';                   // DB password
-	public $db = '';                         // DB database name
+	public $host = 'us-cdbr-iron-east-04.cleardb.net';              // This is normally set to localhost
+	public $user = 'bc0a7c9012bec3';                       // DB username
+	public $password = 'c090425b';                   // DB password
+	public $db = 'ad_425e5d05e85d3f6';                         // DB database name
 	public $dbprefix = 'jos_';               // Do not change unless you need to!
 
 	/* Server Settings */
