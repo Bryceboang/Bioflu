@@ -36,7 +36,7 @@ class JConfig
 	public $user = 'bc0a7c9012bec3';                       // DB username
 	public $password = 'c090425b';                   // DB password
 	public $db = 'ad_425e5d05e85d3f6';                         // DB database name
-	public $dbprefix = 'jos_';               // Do not change unless you need to!
+	public $dbprefix = 'ncx7_';               // Do not change unless you need to!
 
 	/* Server Settings */
 	public $secret = 'FBVtggIk5lAzEU9H';     // Change this to something more secure
