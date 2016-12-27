@@ -9,7 +9,7 @@ class JConfig {
 	public $captcha = '0';
 	public $list_limit = '20';
 	public $access = '1';
-	public $debug = '1';
+	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysql';
 	// public $host = 'us-cdbr-iron-east-04.cleardb.net';
@@ -24,7 +24,7 @@ class JConfig {
 	public $live_site = '';
 	public $secret = 'zVnUUEq9A3wHzpvb';
 	public $gzip = '0';
-	public $error_reporting = 'default';
+	public $error_reporting = 'E_ALL';
 	public $helpurl = 'https://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
 	public $ftp_host = '127.0.0.1';
 	public $ftp_port = '21';
