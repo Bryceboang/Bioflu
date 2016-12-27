@@ -9,7 +9,7 @@ class JConfig {
 	public $captcha = '0';
 	public $list_limit = '20';
 	public $access = '1';
-	public $debug = '0';
+	public $debug = '1';
 	public $debug_lang = '0';
 	public $dbtype = 'mysql';
 	// public $host = 'us-cdbr-iron-east-04.cleardb.net';
@@ -18,7 +18,7 @@ class JConfig {
 	// public $db = 'ad_425e5d05e85d3f6';
 	public $host = '161.202.29.32';
 	public $user = 'biofludb_user';
-	public $password = '+E082ChKKzqy';
+	public $password = "+E082ChKKzqy";
 	public $db = 'biofludb_prod';
 	public $dbprefix = 'bio_';
 	public $live_site = '';
