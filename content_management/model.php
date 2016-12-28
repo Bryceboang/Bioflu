@@ -1893,8 +1893,8 @@ function getedit_global($id,$table,$field){
 	$query
 		->select('*')
 		->from($db->quoteName('#__'.$table))
-		->where($db->quoteName($field) . ' = '. $db->quote($id))
-		->where($db->quoteName('state').'= "1" OR '.$db->quoteName('state').'= "0"');
+		->where($db->quoteName($field) . ' = '. $db->quote($id));
+		//->where($db->quoteName('state').'= "1" OR '.$db->quoteName('state').'= "0"');
 	$db->setQuery($query);
 	$results = $db->loadObjectList();
 	return $results;
