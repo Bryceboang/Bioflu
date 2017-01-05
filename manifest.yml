@@ -1,9 +1,9 @@
 applications:
 - path: .
-  memory: 128M
+  memory: 512M
   instances: 1
   domain: mybluemix.net
   name: Bioflu
+  host: Bioflu
   disk_quota: 1024M
   buildpack: php_buildpack
-  random-route: false
