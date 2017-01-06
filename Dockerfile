@@ -1,29 +1,34 @@
-FROM registry.ng.bluemix.net/ibmnode:latest
+FROM ubuntu:trusty
+MAINTAINER Fernando Mayo <fernando@tutum.co>
 
-MAINTAINER Joshua Reyes <joshuareyes0601@gmail.com>
+# Install base packages
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get -yq install \
+        curl \
+        apache2 \
+        libapache2-mod-php5 \
+        php5-mysql \
+        php5-mcrypt \
+        php5-gd \
+        php5-curl \
+        php-pear \
+        php-apc && \
+    rm -rf /var/lib/apt/lists/* && \
+    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN /usr/sbin/php5enmod mcrypt
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
+    sed -i "s/variables_order.*/variables_order = \"EGPCS\"/g" /etc/php5/apache2/php.ini
 
-# PHP extension
-RUN requirements="zlib1g-dev libicu-dev git curl" \
-    && apt-get update && apt-get install -y $requirements && rm -rf /var/lib/apt/lists/* \
-    && docker-php-ext-install pdo_mysql \
-    && docker-php-ext-install intl \
-    && docker-php-ext-install zip \
-    && apt-get purge --auto-remove -y
+ENV ALLOW_OVERRIDE **False**
 
-# Apache & PHP configuration
-RUN a2enmod rewrite
-ADD docker/apache/vhost.conf /etc/apache2/sites-enabled/000-default.conf
-ADD docker/php/php.ini /usr/local/etc/php/php.ini
+# Add image configuration and scripts
+ADD run.sh /run.sh
+RUN chmod 755 /*.sh
 
-# Add the application
-ADD . /app
-WORKDIR /app
+# Configure /app folder with sample app
+RUN mkdir -p /app && rm -fr /var/www/html && ln -s /app /var/www/html
+ADD sample/ /app
 
-EXPOSE 443
 EXPOSE 80
-EXPOSE 3000
-
-# Ensure that the production container will run with the www-data user
-RUN chown www-data /app
-
-CMD ["/app/docker/apache/run.sh"]
+WORKDIR /app
+CMD ["/run.sh"]
