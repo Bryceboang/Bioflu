@@ -1,4 +1,4 @@
-FROM php:7-apache
+FROM registry.ng.bluemix.net/ibmnode:latest
 
 MAINTAINER Joshua Reyes <joshuareyes0601@gmail.com>
 
@@ -15,16 +15,13 @@ RUN a2enmod rewrite
 ADD docker/apache/vhost.conf /etc/apache2/sites-enabled/000-default.conf
 ADD docker/php/php.ini /usr/local/etc/php/php.ini
 
-# Install composer
-RUN curl -sS https://getcomposer.org/installer | php \
-    && mv composer.phar /usr/bin/composer
-
 # Add the application
 ADD . /app
 WORKDIR /app
 
-# Install dependencies
-RUN composer install -o
+EXPOSE 443
+EXPOSE 80
+EXPOSE 3000
 
 # Ensure that the production container will run with the www-data user
 RUN chown www-data /app
