@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM registry.ng.bluemix.net/ibmnode:latest
 MAINTAINER Fernando Mayo <fernando@tutum.co>
 
 # Install base packages
