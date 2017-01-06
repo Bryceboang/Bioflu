@@ -1,16 +1,32 @@
-# A basic apache server. To use either add or bind mount content under /var/www
-FROM ubuntu:12.04
+FROM php:7-apache
 
-MAINTAINER Joshua Reyes version: 0.1
+MAINTAINER Joshua Reyes <joshuareyes0601@gmail.com>
 
-RUN apt-get update && apt-get install -y apache2 && apt-get clean && rm -rf /var/lib/apt/lists/*
+# PHP extension
+RUN requirements="zlib1g-dev libicu-dev git curl" \
+    && apt-get update && apt-get install -y $requirements && rm -rf /var/lib/apt/lists/* \
+    && docker-php-ext-install pdo_mysql \
+    && docker-php-ext-install intl \
+    && docker-php-ext-install zip \
+    && apt-get purge --auto-remove -y
 
-ENV APACHE_RUN_USER www-data
-ENV APACHE_RUN_GROUP www-data
-ENV APACHE_LOG_DIR /var/log/apache2
+# Apache & PHP configuration
+RUN a2enmod rewrite
+ADD docker/apache/vhost.conf /etc/apache2/sites-enabled/000-default.conf
+ADD docker/php/php.ini /usr/local/etc/php/php.ini
 
-EXPOSE 443
-EXPOSE 80
-EXPOSE 3000
+# Install composer
+RUN curl -sS https://getcomposer.org/installer | php \
+    && mv composer.phar /usr/bin/composer
 
-CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
+# Add the application
+ADD . /app
+WORKDIR /app
+
+# Install dependencies
+RUN composer install -o
+
+# Ensure that the production container will run with the www-data user
+RUN chown www-data /app
+
+CMD ["/app/docker/apache/run.sh"]
