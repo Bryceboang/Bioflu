@@ -1,4 +1,4 @@
-FROM registry.ng.bluemix.net/ibmnode:latest
+FROM registry.ng.bluemix.net/ibmliberty:latest
 
 # Expose the ports we're interested in
 EXPOSE 80
