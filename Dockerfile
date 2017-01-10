@@ -1,4 +1,4 @@
-FROM php:7.0-fpm
+FROM registry.ng.bluemix.net/mvgeronimo/biofluimage:14
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 
 # Install PHP extensions
