@@ -2,7 +2,6 @@ FROM registry.ng.bluemix.net/ibmnode:latest
 
 ADD . /php
 WORKDIR /php
-RUN npm install
 
 
 EXPOSE 443
