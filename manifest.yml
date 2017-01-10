@@ -3,7 +3,7 @@ applications:
   memory: 512M
   instances: 1
   domain: mybluemix.net
-  name: BiofluApp
+  name: BiofluApplication
   host: Bioflu
   disk_quota: 1024M
   buildpack: php_buildpack
