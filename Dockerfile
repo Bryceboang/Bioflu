@@ -1,4 +1,5 @@
-FROM registry.ng.bluemix.net/biofluimage:14
+FROM registry.ng.bluemix.net/ibmnode:latest
+
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 
 # Install PHP extensions
