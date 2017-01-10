@@ -1,6 +1,8 @@
-FROM registry.ng.bluemix.net/ibmnode:latest
-
+FROM php:7.0-apache
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
+
+# Enable Apache Rewrite Module
+RUN a2enmod rewrite
 
 # Install PHP extensions
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libmcrypt-dev zip unzip && rm -rf /var/lib/apt/lists/* \
@@ -22,20 +24,3 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& unzip joomla.zip -d /usr/src/joomla \
 	&& rm joomla.zip \
 	&& chown -R www-data:www-data /usr/src/joomla
-
-# Copy init scripts and custom .htaccess
-COPY docker-entrypoint.sh /entrypoint.sh
-COPY makedb.php /makedb.php
-
-EXPOSE 80
-EXPOSE 443
-EXPOSE 3000
-
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["php-fpm"]
-
-
-
-
-
-
