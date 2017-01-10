@@ -22,8 +22,6 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
 ENV ALLOW_OVERRIDE **False**
 
 # Configure /app folder with sample app
-RUN mkdir -p /app && rm -fr /var/www/html && ln -s /app /var/www/html
-ADD sample/ /app
 
 EXPOSE 80
 EXPOSE 443
