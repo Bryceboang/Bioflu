@@ -1,9 +1,4 @@
-FROM registry.ng.bluemix.net/ibmnode:latest
-
-ADD . /php
-WORKDIR /php
-
-
-EXPOSE 443
-EXPOSE 80
-EXPOSE 3000
+FROM php:7.0-cli
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
+CMD [ "php", "./your-script.php" ]
