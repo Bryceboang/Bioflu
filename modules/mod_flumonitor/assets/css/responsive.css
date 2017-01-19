@@ -1,0 +1,33 @@
+@media only screen and (max-width: 767px) {
+	.child-containers{
+	    display: table;
+		width: 100%;
+	}
+	.parent-container{
+		display: inline-table;
+		width: 100%;
+		padding: 20px;
+	}
+	.bs-row{
+		padding: 8px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	.child-containers{
+	    display: table;
+		width: 100%;
+	}
+	.parent-container{
+		display: inline-table;
+		width: 100%;
+		padding: 20px;
+	}
+	.bs-row{
+		padding: 8px;
+	}
+	.map-container
+	{
+		height: 400px;
+	}
+}

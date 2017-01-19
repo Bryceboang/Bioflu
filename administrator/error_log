@@ -1,0 +1,1 @@
+[10-Oct-2016 06:43:52 UTC] PHP Warning:  fopen(/var/www/html/bioflu/logs/error.php): failed to open stream: No such file or directory in /home/bioflu2/public_html/libraries/joomla/log/logger/formattedtext.php on line 230
