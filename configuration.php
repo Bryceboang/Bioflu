@@ -13,15 +13,15 @@ class JConfig {
 	public $debug_lang = '0';
 	public $dbtype = 'mysql';
 
-	public $host = '161.202.29.32';
-	public $user = 'biofludb_user';
-	public $password = '+E082ChKKzqy';
-	public $db = 'biofludb_prod';
+	// public $host = '161.202.29.32';
+	// public $user = 'biofludb_user';
+	// public $password = '+E082ChKKzqy';
+	// public $db = 'biofludb_prod';
 	
-	// public $host = '119.81.221.64';
-	// public $user = 'phpecomq_bioflu2';
-	// public $password = 'VASOy-*[-+CG';
-	// public $db = 'phpecomq_bioflu2';
+	public $host = '119.81.221.64';
+	public $user = 'phpecomq_bioflu2';
+	public $password = 'VASOy-*[-+CG';
+	public $db = 'phpecomq_bioflu2';
 	
 	public $dbprefix = 'bio_';
 	public $live_site = '';
