@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension method="upgrade" client="site" version="3.1.0" type="module">
+<name>Related Articles</name>
+<author>Celeste Fernandez</author>
+<version>1.0.0</version>
+<description>Display related articles</description>
+<files>
+	<filename>mod_related_articles.xml</filename>
+	<filename module="mod_related_articles">mod_related_articles.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.html</filename>
+</files>
+<config> </config>
+</extension>
