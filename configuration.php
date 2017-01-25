@@ -18,10 +18,15 @@ class JConfig {
 	// public $password = '+E082ChKKzqy';
 	// public $db = 'biofludb_prod';
 	
-	public $host = '119.81.221.64';
-	public $user = 'phpecomq_bioflu2';
-	public $password = 'VASOy-*[-+CG';
-	public $db = 'phpecomq_bioflu2';
+	// public $host = '119.81.221.64';
+	// public $user = 'phpecomq_bioflu2';
+	// public $password = 'VASOy-*[-+CG';
+	// public $db = 'phpecomq_bioflu2';
+
+	public $host = 'us-cdbr-iron-east-04.cleardb.net';
+	public $user = 'b7cdc24bd002d6';
+	public $password = 'f6ee0df8';
+	public $db = 'ad_421c2eb3d42355e';
 	
 	public $dbprefix = 'bio_';
 	public $live_site = '';
