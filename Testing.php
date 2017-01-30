@@ -1,15 +1,16 @@
 <?php
-    echo "<p> Testing </p>";
-error_reporting('E_ALL');
+
 // get MySQL service configuration from Bluemix
 $services = getenv("VCAP_SERVICES");
 
 $serviceOK = true;
 
 if (empty($services)) {
+      echo "<p> 1 </p>";
     echo "<p>'VCAP_SERVICES' is not defined!</p>";
     $serviceOK = false;
 } else {
+    echo "<p> 2 </p>";
     $services_json = json_decode($services, true);
     if (!array_key_exists("cleardb", $services_json)){
         echo "<p>'cleardb' is not defined!</p>";
@@ -44,8 +45,10 @@ if (empty($services)) {
 }
 
 if (!$serviceOK) {
+    echo "<p> 3 </p>";
     echo "<p>The ClearDB service is not defined!</p>";
 } else {
+    echo "<p> 4 </p>";
     try {
         $dbh = new \PDO("mysql:host=$host;dbname=$db;port=$port",$username,$password);
         echo "<p>The PDO DB connection is OK!</p>";
