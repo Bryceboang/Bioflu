@@ -14,22 +14,17 @@ if (empty($services)) {
         echo "<p>'cleardb' is not defined!</p>";
         $serviceOK = false;
     } else {
-echo "<p> 2.2 </p>";
         $cleardb_service = $services_json["cleardb"];
-
         if (!is_array($cleardb_service)) {
-          echo "<p> 2.2.1 </p>";
             echo "<p>'cleardb_service' is NOT an array!</p>";
             $serviceOK = false;
         } elseif (count($cleardb_service) <= 0) {
-          echo "<p> 2.2.2 </p>";
             echo "<p>'cleardb_service' is an empty array!</p>";
             $serviceOK = false;
         } else {
             $serviceDetails = $cleardb_service[0];
-echo "<p> 2.2.3 </p>";
             if(array_key_exists("credentials", $serviceDetails)) {
-              echo "<p> 2.2.3.1 </p>";
+
                 $db_config = $serviceDetails["credentials"];
                 $uri = $db_config["uri"];
                 $db = $db_config["name"];
@@ -37,8 +32,13 @@ echo "<p> 2.2.3 </p>";
                 $port = $db_config["port"];
                 $username = $db_config["username"];
                 $password = $db_config["password"];
+
+                echo $db;
+                echo $host;
+                echo $port;
+                echo $username;
+                echo $password;
             } else {
-                      echo "<p> 2.2.3.2 </p>";
                 echo "<p>'credentials' is not defined!</p>";
                 $serviceOK = false;
             }
