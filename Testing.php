@@ -1,4 +1,5 @@
 <?php
+    echo "<p> Testing </p>";
 error_reporting('E_ALL');
 // get MySQL service configuration from Bluemix
 $services = getenv("VCAP_SERVICES");
