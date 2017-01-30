@@ -33,16 +33,14 @@ if (empty($services)) {
                 $username = $db_config["username"];
                 $password = $db_config["password"];
 
-                echo $db;
-                echo $host;
-                echo $port;
-                echo $username;
-                echo $password;
-
                 echo $db_config["name"];
+                echo "              ";
                 echo $db_config["hostname"];
+                  echo "              ";
                 echo $db_config["port"];
+                  echo "              ";
                 echo $db_config["username"];
+                  echo "              ";
                 echo $db_config["password"];
 
             } else {
