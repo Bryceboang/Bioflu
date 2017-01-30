@@ -38,6 +38,13 @@ if (empty($services)) {
                 echo $port;
                 echo $username;
                 echo $password;
+
+                echo $db_config["name"];
+                echo $db_config["hostname"];
+                echo $db_config["port"];
+                echo $db_config["username"];
+                echo $db_config["password"];
+
             } else {
                 echo "<p>'credentials' is not defined!</p>";
                 $serviceOK = false;
