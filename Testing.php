@@ -6,17 +6,17 @@ $services = getenv("VCAP_SERVICES");
 $serviceOK = true;
 
 if (empty($services)) {
-      echo "<p> 1 </p>";
     echo "<p>'VCAP_SERVICES' is not defined!</p>";
     $serviceOK = false;
 } else {
     echo "<p> 2 </p>";
     $services_json = json_decode($services, true);
     if (!array_key_exists("cleardb", $services_json)){
+          echo "<p> 2.1 </p>";
         echo "<p>'cleardb' is not defined!</p>";
         $serviceOK = false;
     } else {
-
+echo "<p> 2.2 </p>";
         $cleardb_service = $services_json["cleardb"];
 
         if (!is_array($cleardb_service)) {
@@ -45,14 +45,15 @@ if (empty($services)) {
 }
 
 if (!$serviceOK) {
-    echo "<p> 3 </p>";
     echo "<p>The ClearDB service is not defined!</p>";
 } else {
     echo "<p> 4 </p>";
     try {
+          echo "<p> 4.1 </p>";
         $dbh = new \PDO("mysql:host=$host;dbname=$db;port=$port",$username,$password);
         echo "<p>The PDO DB connection is OK!</p>";
     } catch (PDOException $e) {
+          echo "<p> 4.2 </p>";
         echo '<p>PDO Connection failed: ' . $e->getMessage(). '</p>';
     }
 
@@ -62,8 +63,10 @@ if (!$serviceOK) {
      * compatibility with PHP versions prior to 5.2.9 and 5.3.0.
      */
     if (mysqli_connect_error()) {
+        echo "<p> 4.3 </p>";
         echo '<p>mysqli Connection failed: ' . mysqli_connect_error(). '</p>';
     } else {
+        echo "<p> 4.4 </p>";
         echo 'Success... ' . $mysqli->host_info . "\n";
         $mysqli->close();
     }
