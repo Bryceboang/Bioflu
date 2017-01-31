@@ -1,0 +1,4 @@
+FROM php:7.0-cli
+COPY . /usr/src/Bioflu
+WORKDIR /usr/src/Bioflu
+CMD [ "php", "./index.php" ]
